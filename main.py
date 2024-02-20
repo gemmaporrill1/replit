@@ -32,6 +32,9 @@ quote = "I love python"
 print(quote[0])
 print(quote[7:])
 
+#skip
+print(quote[::3])
+
 # print(quote[100]) index out of range 
 
 #reverse first character
