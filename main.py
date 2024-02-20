@@ -35,12 +35,7 @@ print(quote[7:])
 #skip
 print(quote[::3])
 
-# print(quote[100]) index out of range 
+# print(quote[100]) index out of range
 
 #reverse first character
 print(quote[::-1])
-
-
-
-
-
