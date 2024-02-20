@@ -32,9 +32,9 @@ player_stats = [10, 30, 60] # create a copy
 
 #list comprehension
 #double all the stat for each stat present in player stats
-powered_up_stats = [stat * 2 for stat in player_stats]
+# powered_up_stats = [stat * 2 for stat in player_stats]
 
-print(powered_up_stats, player_stats)
+# print(powered_up_stats, player_stats)
 
 #task 
 
@@ -47,5 +47,10 @@ avengers = [
     "Thor",
 ]
 
-character_count = [len(i) for i in avengers]
-print(character_count)
+# character_count = [len(i) for i in avengers]
+# print(character_count)
+
+for i in avengers:
+  if len(i) > 10:
+    print(i)
+  
