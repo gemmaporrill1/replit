@@ -69,10 +69,11 @@ subjects = ["maths", "science", "english" ]
 
 print(', '.join(subjects))
 
-#sorting 
+#sorting  -> mutable
 subjects.sort()
 print(subjects)
 
 #reverse order
 subjects.sort(reverse=True)
 print(subjects)
+

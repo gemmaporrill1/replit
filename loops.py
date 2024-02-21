@@ -18,7 +18,7 @@
 
 #task
 
-player_stats = [10, 30, 60] # create a copy
+# player_stats = [10, 30, 60] # create a copy
 
 # powered_up = player_stats.copy()
 
@@ -50,7 +50,25 @@ avengers = [
 # character_count = [len(i) for i in avengers]
 # print(character_count)
 
-for i in avengers:
-  if len(i) > 10:
-    print(i)
+#when index matters
+# for i in avengers:
+#   if len(i) > 10:
+#     print(i)
+
+
+
+
+# only value matters
+# filtered_names = []
+# for avenger in avengers:
+#   if(len(avenger) > 10):
+#     filtered_names.append(avenger)
+# print(filtered_names)
+
+#list comprehension
+# I want the avenger from the avengers list where the length is greater than 10
+#using string methods to list and list comprehension
+# filtered_names = [avenger.upper() for avenger in avengers if len(avenger) > 10 ]
+
+# print(filtered_names)
   

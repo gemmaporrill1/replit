@@ -50,4 +50,5 @@ choice = input("Please choose your flavour: ")
 
 #change to ternary
 
-print('it is available' if choice in shop_stock else 'it is unavailable')
+print('it is available' if choice in shop_stock else 'it is unavailable') 
+#membership operator
