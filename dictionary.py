@@ -24,7 +24,7 @@
 # # Iterable -> list, tuple, dict_keys (can use for loop)
 # print(person.keys()) #gives key titles
 # print(person.values()) #gives key values
-# print(person.items()) #tuple of items -> can use unpacking , using with a for loop
+# print(person.items()) #tuple of key, value -> can use unpacking , using with a for loop
 
 # #Looping a dictionary
 
@@ -46,7 +46,7 @@ person = {
   "height": 186
 }
 
-# print(person['height']) #error no height in keys 
+# print(person['height']) #key error no height in keys 
 
 print(person.get('height')) #gives none if not in keys
 

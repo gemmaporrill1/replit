@@ -32,11 +32,11 @@ print(person.get('stats', {}).get('points')) #none output
 
 # #verything in list comprehension also works in dictionary comprehension
 
-# nums = {x: x ** 2 for x in range(10) if x % 2 == 0}
+# nums = {x: x ** 2 for x in range(10) if x % 2 == 0} | returns a dictionary
 # print(nums)
 
 #when index matters
-nums = [ 90, 50, 80]
+nums = [90, 50, 80]
 
 for num in enumerate(nums):
   print(num)

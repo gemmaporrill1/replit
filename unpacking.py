@@ -40,3 +40,7 @@ print(t1, t2, t3) #t3 is a list
 #tuple
 t1, t2, *t3 = (100, 200, 300, 400, 500)
 print(t1, t2, t3) #t3 is a list
+
+#skip to the end | multiple skip
+t1, t2, *_, t3 = (100, 200, 300, 400, 500, 30)
+print(t1, t2, t3) #t3 is a list

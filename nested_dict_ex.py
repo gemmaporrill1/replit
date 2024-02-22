@@ -44,10 +44,10 @@ movie_copy1 = movie.copy()
 movie_copy2 = {**movie, "rating": 10}
 print(movie_copy2)
 
-movie_copy3 = {**movie, "rating": 10, "year": 2002}
+movie_copy3 = {**movie, "rating": 10, "year": 2002} #right most value replaces if the key exists
 print(movie_copy3)
 
-movie_copy4 = {"rating": 10, "year": 2002, **movie}
+movie_copy4 = {"rating": 10, "year": 2002, **movie} #will be 2001 as movie is right most
 print(movie_copy4)
 
 #combining dictionaries
