@@ -12,7 +12,7 @@ books = [
 # book_list = []
 
 # for dictionary in books:
-#   book_list.append(dictionary)
+#   book_list.append(dictionary) #pass by reference
 #   if dictionary["rating"] >= 4.7:
 #     print(dictionary["title"])
 

@@ -42,6 +42,7 @@
 # result = map_own(lambda x: x * 2, [10, 20, 30])
 # print(result)
 
+# need to change map to list() before printing otherwise it will just give map object 
 
 #list comprehension
 # def map_own(fn, arr):
@@ -89,8 +90,17 @@ print(mul_5, type(mul_5)) # -> type is function
 print(mul_5(10)) # prints final value
 
 #HOF - argument function
-result1 = map(lambda x: x * 2, [10, 20, 30])
+result1 = map(lambda x: x * 2, [10, 20, 30]) # takes a function as a first parameter and
+# then a iterable. Applies the given function to each element of the iterable, returning
+
+#map 
+
+# a new iterable with the results
 result2 = filter(lambda x: x > 10, [10, 50, 60, 100, 6, 8, 30])
+
+# filter wants to be returned a boolean, expects it
+# if true, given final result
+# if false, it is not given 
 
 print(list(result1))
 print(list(result2))
