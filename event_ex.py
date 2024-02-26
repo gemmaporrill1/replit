@@ -9,17 +9,39 @@
 # Registering a participant with all details specified.
 # Registering a participant with only the name and email, using default values for the other parameters.
 
+# name_input = input("Enter your name: ")
+# email_input = input("Enter your email: ")
+# meal_preference_input = input(
+#   "Enter your meal preference (vegetarian/non-vegetarian): ")
+# needs_accommodation_input = input("Do you need accommodation? (yes/no): ")
+
+# choices = []
+
+# def register_participant(name, email, meal_preference="non-vegetarian", needs_accommodation=False):
+#   for choice in choices:
+    
+#     if needs_accommodation_input == "yes":
+#       return True
+#     if needs_accommodation == "no":
+#       return False
+
+#     register_participant.append(choice(name_input, email_input, meal_preference_input, needs_accommodation_input))
+
+# print(choices)
+
+choices = []
+
+def register_participant(name, email, meal_preference="non-vegetarian", needs_accommodation= False):
+  for choice in choices:
+    if needs_accommodation == "yes":
+      return True
+    choices.append(choices)
+    return choices
+
+# Collect participant information
 name_input = input("Enter your name: ")
 email_input = input("Enter your email: ")
 meal_preference_input = input("Enter your meal preference (vegetarian/non-vegetarian): ")
 needs_accommodation_input = input("Do you need accommodation? (yes/no): ")
 
-choices = [name_input, email_input, meal_preference_input, needs_accommodation_input]
-
-def register_participant(name, email, meal_preference="non-vegetarian", needs_accommodation=False):
-  if needs_accommodation_input == "yes":
-    needs_accommodation = True
-  for choice in choices:
-    register_participant.append(choice)
-  
-print(list(choices))
+# Register the participant
