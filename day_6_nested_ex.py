@@ -84,25 +84,25 @@ classes = {
 
 #task 3: task 1 + list comprehension
 
-def get_class_average(class_list):
-    class_name, students = class_list
-    class_grades = [grade for student in students for grade in student["grades"]]
-    total_grades = sum(class_grades)
-    total_students = sum(len(student["grades"]) for student in students)
-    class_average = total_grades / total_students
-    return f"{class_average: .2f}"
+# def get_class_average(class_list):
+#     class_name, students = class_list
+#     class_grades = [grade for student in students for grade in student["grades"]]
+#     total_grades = sum(class_grades)
+#     total_students = sum(len(student["grades"]) for student in students)
+#     class_average = total_grades / total_students
+#     return f"{class_average: .2f}"
 
-class_new_list = {class_name: get_class_average((class_name, students)) for class_name, students in classes.items()}
+# class_new_list = {class_name: get_class_average((class_name, students)) for class_name, students in classes.items()}
 
-pprint(class_new_list)
+# pprint(class_new_list)
 
-# class_students_avg = [find_avg(students['grades'])) for student in students]
+# # class_students_avg = [find_avg(students['grades'])) for student in students]
 
-#task 4: task 2 + list comprehension
+# #task 4: task 2 + list comprehension
 
-student_dict = {class_name: {student["name"]: round(sum(student["grades"]) / len(student["grades"]), 2) for student in students} for class_name, students in classes.items()}
+# student_dict = {class_name: {student["name"]: round(sum(student["grades"]) / len(student["grades"]), 2) for student in students} for class_name, students in classes.items()}
 
-pprint(student_dict)
+# pprint(student_dict)
 
 # nested for loop ex
 # for i in range(10):
@@ -110,15 +110,29 @@ pprint(student_dict)
 #     print((i, j))
 
 #creating dictionary with for loop
-dict = {}
-for x in range(3):
-  dict[x] = x * x # key: value
-print(dict)
+# dict = {}
+# for x in range(3):
+#   dict[x] = x * x # key: value
+# print(dict)
 
-# output {0: 0, 1: 1, 2: 4}
+# # output {0: 0, 1: 1, 2: 4}
 
-dict = {x: x * x for x in range(3)} # declare key and value | key: value
-print(dict)
+# dict = {x: x * x for x in range(3)} # declare key and value | key: value
+# print(dict)
 
-classes_ avg = {class_name: find_avg([find_avg(student["grades"]) for student in students]) for class_name, students in classes.items()}
-print(classes_avg)
+# classes_ avg = {class_name: find_avg([find_avg(student["grades"]) for student in students]) for class_name, students in classes.items()}
+# print(classes_avg)
+
+# students_avg_dict = {}
+# for cls_name, students in classes.items():
+#   students_dict = {}
+#   for student in students:
+#     students_dict[student['name']] = find_avg(student['grades'])
+#   students_avg_dict[cls_name] = students_dict
+# pprint(students_avg_dict)
+
+def find_avg(nums):
+  return round(sum(nums) / len(nums), 2)
+
+students_avg_dict = {cls_name: {student['name']: find_avg(student['grades']) for student in students} for cls_name, students in classes.items()}
+pprint(students_avg_dict)

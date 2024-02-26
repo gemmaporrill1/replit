@@ -32,3 +32,7 @@
 
 ## Dictionary comprehension
 ![image](image_2.png)
+
+## Regex
+https://regexone.com
+https://regex101.com
