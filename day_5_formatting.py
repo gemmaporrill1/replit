@@ -19,6 +19,7 @@ print(f"My name is {name:>10}")
 print(f"My name is {name:<10}")
 print(f"My name is {name:^10}") #centre
 
+#padding
 print(f"My name is {person:*>10}")
 print(f"My name is {person:#<10}")
 print(f"My name is {person:$^10}")

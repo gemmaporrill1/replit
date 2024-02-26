@@ -1,3 +1,5 @@
+from pprint import pprint
+
 # movie data
 movies = [
     {
@@ -93,8 +95,14 @@ print(list(printed_list))
 
 
 #task 4 -> discuss on Monday
-# order by the rating 
+# order by the rating + top 3
 
-ordered_rating = list(sorted(movies_avg_ratings, key=lambda movie: movie["average_rating"], reverse=True))
-titles = map(lambda x: x['title'], ordered_rating)
-print(list(titles))
+ordered_rating = sorted(movies_avg_ratings, key=lambda movie: movie["average_rating"], reverse=True)
+titles = map(lambda x: x['title'], list(ordered_rating))
+top_3_movies = list(titles)[0:3]
+print(", ".join(top_3_movies))
+
+
+#using pretty print
+sorted_movies = sorted(movies, key=lambda movie: find_avg(movie))
+pprint(list(sorted_movies))

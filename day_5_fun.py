@@ -1,4 +1,4 @@
-# import day_5_cool
+# import day_5_cool | __name__ will print as day_5_cool
 
 # print(day_5_cool.to_upper("fun"))
 
@@ -13,3 +13,6 @@ print(to_lower('ALEX'))
 from math import pi
 
 print(pi)
+
+# alias 
+from day_5_cool import to_upper as to_upper_alias

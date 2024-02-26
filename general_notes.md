@@ -6,6 +6,8 @@
 - What is the difference bewteen parameters and arguments
 
 - All sequences are iterables
+- using map: always input and output will be the same, gives you a copy and transforming data type
+- using filter: output is shorter or equal to input, gives a copy and same data type 
 
 - https://whimsical.com/python-data-types-classification-Q967VqqPXDmUW5QPjXgdK2
 
@@ -18,3 +20,12 @@
 
 ## Python docs
 - https://docs.python.org/3/library/datetime.html
+
+## Variable names cannot be 
+- keywords
+- starting with a number
+- they are case sensetive | city, CITY are different 
+- including special characters except _
+
+## List comprehension
+![image](image.png)
