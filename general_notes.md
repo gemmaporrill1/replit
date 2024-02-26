@@ -29,3 +29,6 @@
 
 ## List comprehension
 ![image](image.png)
+
+## Dictionary comprehension
+![image](image_2.png)

@@ -96,7 +96,7 @@ class_new_list = {class_name: get_class_average((class_name, students)) for clas
 
 pprint(class_new_list)
 
-
+# class_students_avg = [find_avg(students['grades'])) for student in students]
 
 #task 4: task 2 + list comprehension
 
@@ -108,3 +108,17 @@ pprint(student_dict)
 # for i in range(10):
 #   for j in range(5):
 #     print((i, j))
+
+#creating dictionary with for loop
+dict = {}
+for x in range(3):
+  dict[x] = x * x # key: value
+print(dict)
+
+# output {0: 0, 1: 1, 2: 4}
+
+dict = {x: x * x for x in range(3)} # declare key and value | key: value
+print(dict)
+
+classes_ avg = {class_name: find_avg([find_avg(student["grades"]) for student in students]) for class_name, students in classes.items()}
+print(classes_avg)
