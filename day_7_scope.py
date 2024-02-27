@@ -55,7 +55,7 @@ fun() # [10, 10, 10, 10]
 
 
 #exercise
-def fun(nums=None): 
+def fun(nums=None): # Singleton -> None | cannot have two, one of a kind
     if nums is None: 
         nums = [] 
     nums.append(10) 
