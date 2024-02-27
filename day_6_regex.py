@@ -62,3 +62,12 @@ result1 = re.sub(r'(\w+)(\.com)', r'\1.net', website_list)
 print(result1)
 
 # r'\2 \1.net' | moves strings around 
+# .groups() prints groups out
+
+# names array
+names = ["John Doe", "Jane Smith", "Alice Johnson", "Chris Evans"]
+# output = 
+
+for name in names:
+  name_shuffle = [re.sub(r'(\w+)\s*(\w+)', r'\2, \1', name)]
+  print(name_shuffle)

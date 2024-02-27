@@ -34,5 +34,9 @@
 ![image](image_2.png)
 
 ## Regex
-https://regexone.com
-https://regex101.com
+- https://regexone.com
+- https://regex101.com
+- [] character set
+- {} repetition
+
+- assignment - look behind in regex
