@@ -71,3 +71,14 @@ names = ["John Doe", "Jane Smith", "Alice Johnson", "Chris Evans"]
 for name in names:
   name_shuffle = [re.sub(r'(\w+)\s*(\w+)', r'\2, \1', name)]
   print(name_shuffle)
+
+#answer
+
+result = []
+for name in names:
+  result.append(re.sub(r'(\w+)\s+(\w+)', r'\2, \1', name))
+print(result)
+
+#list comp
+result1 = [re.sub(r'(\w+)\s+(\w+)', r'\2, \1', name) for name in names]
+print(result1)
