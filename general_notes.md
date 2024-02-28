@@ -40,3 +40,14 @@
 - {} repetition
 
 - assignment - look behind in regex
+
+## 5 pillars -> good quality
+- 1: readability -> for loop to list comprehension makes it more readable
+- 2: maintainability -> reuseable
+- 3: extendability
+- 4: testability
+- 5: performance
+
+## is vs ==
+- is points to memory address | checks none -> singleton
+- == checks value
