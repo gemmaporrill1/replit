@@ -51,3 +51,10 @@
 ## is vs ==
 - is points to memory address | checks none -> singleton
 - == checks value
+
+## assignment for tomorrow (29 Feb)
+
+1. @property,  @balance.setter
+2. Creating you own decorator 
+    - Using function
+    - Using classes
