@@ -58,3 +58,6 @@
 2. Creating you own decorator 
     - Using function
     - Using classes
+
+## fibonacci shortening 
+![alt text](image-1.png)
