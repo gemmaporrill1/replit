@@ -13,7 +13,8 @@
 - add getters and setters behind the scenes without affecting the syntax used to access/modify the attribute
 ## Example use of @property
 
-` # defining class
+```
+# defining class
 class Example_class:
     def __init__(self, name): 
         self.__name = name
@@ -31,7 +32,7 @@ class Example_class:
 Example_class.name = "Gemma Porrill"
 
 print(Example_class.name)
-`
+```
 ### Example Output:
 - Gemma Porrill
 
@@ -49,7 +50,7 @@ print(Example_class.name)
 1. Making attributes non-public 
 2. Writing getter and setter methods for each attribute
 ## Example
-`
+```
 class Label:
     def __init__(self, text, font):
         self._text = text
@@ -66,7 +67,7 @@ class Label:
 
     def set_font(self, value):
         self._font = value
-`
+```
 
 - The constructor of Label takes two arguments, text and font
 - These arguments are stored in the ._text and ._font non-public instance attributes
