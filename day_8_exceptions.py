@@ -1,6 +1,7 @@
 def math_divide(n1, n2):
     try:
         result = n1 / n2
+        print("The answer is: ", result)
 
     except ZeroDivisionError:
         # when zerodivisionerror happens
@@ -11,7 +12,7 @@ def math_divide(n1, n2):
         print("Division was successful")
 
     finally:
-        # no error or error - runs last
+        # no error or error - always runs | runs last
         print("Operation done")
 
 

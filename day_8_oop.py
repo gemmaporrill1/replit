@@ -1,12 +1,12 @@
-# # Encapsulation
+# Encapsulation
 
 
 # class Bank2:
-#     # Class variable | All your instances share the class variable
+#     # Class variable | All your instances share the same value | class variable
 #     interest_rate = 0.02
 
-#     def __init__(self, acc_no, name, balance):
-#         # instance variables
+#     def __init__(self, acc_no, name, balance): # self points to the class name
+#         # instance variables | different values in every instance
 #         self.acc_no = acc_no
 #         self.name = name
 #         self.balance = balance
@@ -46,7 +46,7 @@
 # print(dhara.display_balance())
 # print(caleb.display_balance())
 
-# # Encapsulation extension | putting all methods and vairables into one container | giving access to required variables
+# Encapsulation extension | putting all methods and variables into one container | giving access to required variables
 
 
 # class Bank3:
@@ -107,13 +107,12 @@
 #     # class method | cls -> Class
 #     @classmethod
 #     def update_interest_rate(cls, rate):
-#         Bank4.interest_rate = rate
+#         cls.interest_rate = rate
 
 
 #     # static methods -> no cls or self | normal function
 #     @staticmethod
-#     def get_total_no_accounts(cls, count):
-#         Bank4.accounts = count
+#     def get_total_no_accounts():
 #         return f"In total, we have {count} accounts"
 
 #     # instance method| self will point to instance
@@ -213,7 +212,7 @@ class Dog(Animal):
     def run(self):
         return "wags tail"
 
-    # Polymorphism | overriding method
+    # Polymorphism | overriding method -> redefining in child class
     def speak(self):
         return " Woof woof"
 
@@ -332,7 +331,7 @@ class CheckingAccount(Bank):
     def withdraw(self, withdraw_amount):
         return super().withdraw(withdraw_amount + CheckingAccount.withdraw_fee)
 
-    def __str__(self):
+    def __str__(self):  # overriding object def with a string that imporves readability
         """Human readable output | Most important one"""
         return f"This account belongs to Account: {self.name}"
 
