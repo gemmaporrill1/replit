@@ -61,3 +61,6 @@
 
 ## fibonacci shortening 
 ![alt text](image-1.png)
+
+## Emmet cheat sheet
+- https://docs.emmet.io/cheat-sheet/ 
