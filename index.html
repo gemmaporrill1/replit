@@ -18,11 +18,42 @@
             /* RGB 0 - 255*/
             /* color: rgb(255 13 127) */
         }
-
-        p{
-            font-weight: bold;
-            
+        
+        .art, .business, .design{
+            display: inline-block;
+            text-align: center;
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-family: 'Times New Roman', Times, serif;
         }
+
+        .art{
+            background-color: #baddf8;
+            color: #519fe4;
+        }
+
+        .business{
+            background-color: #e2d1ff;
+            color: #380099
+        }
+
+        .design{
+            background-color: #ffd1eb;
+            color: #9e005a
+        }
+        .blue-div{
+            display: inline-block;
+            max-width: 50%;
+            background:#9fdcff;
+            border-radius: 10px;
+            padding: 6px 8px;
+            font-family: "Roboto", sans-serif; 
+            box-shadow: -5px 0 #13a9ff;
+        }
+
+        /* Cntrl + space */
+
+        /* line height should be more if font size is small */
     </style>
 </head>
 <!-- tags / elements <> -->
@@ -58,7 +89,19 @@
         <li>Movies</li>
         <li>Series</li>
     </ol>
+<!-- task -->
+    <div class="example-div">
+            <p class="art">Art</p>
+            <p class="business">Business</p>
+            <p class="design">Design</p>
+    </div>
 
+<!-- task 2 -->
+   <div class="blue-div">
+        <h4>Intended Audience</h4>
+        <p>This tutorial assumes that you already have a static React site (Gatsby/Next) being deployed on Vercel or Netlify</p>
+        <p>It's written with the intermediate Reach developer in mind; if you're newer to the modern JS ecosystem, it might a bit hard to follow</p>
+    </div>
 </body>
 </html>
 
