@@ -1,6 +1,6 @@
 # Setup Code
 ingredients = ["Moonstone", "Silver Dust", "Dragon Blood"]
-potions = ["Visibility", "Dreaming", "Levetating"]
+potions = ["Invisibility", "Dreaming", "Levetating"]
 # Expected Task: For each pair of ingredients, print out the unique potion they produce.
 
 for i in range(len(ingredients)):
