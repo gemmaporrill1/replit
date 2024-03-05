@@ -30,3 +30,5 @@ https://flexboxfroggy.com/
 
 - semantic elements
 
+## Grid
+- grid-template-columns: 1fr 1fr 1fr

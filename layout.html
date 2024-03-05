@@ -7,11 +7,11 @@
     <style>
       .box1,
       .box2,
-      .box3 {
-        /* display: inline-block; */
+      /* .box3 {
+        /* display: inline-block; 
         height: 300px;
         width: 200px;
-      }
+      } */
  
       .box1 {
         background: plum;
@@ -26,7 +26,14 @@
       }
  
       .container {
-        display: flex;
+        display: grid;
+        /* grid-template-columns: 1fr 2fr 1fr; */
+        grid-template-columns: repeat(3, 1fr);
+
+        /* flex vs grid */
+        /* flex - 1D */
+        /* grid - 2D */
+
       }
     </style>
   </head>
