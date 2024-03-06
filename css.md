@@ -32,3 +32,5 @@ https://flexboxfroggy.com/
 
 ## Grid
 - grid-template-columns: 1fr 1fr 1fr
+
+- https://1linelayouts.glitch.me/

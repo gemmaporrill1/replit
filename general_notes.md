@@ -64,3 +64,8 @@
 
 ## Emmet cheat sheet
 - https://docs.emmet.io/cheat-sheet/ 
+
+## Assignment - 07 March
+- squash and merge
+- rebase and merge 
+- how they are different from normal merge in Git
