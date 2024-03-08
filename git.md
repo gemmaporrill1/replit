@@ -1,5 +1,5 @@
 # Git commands
-- git init -> initilize git hidden folder
+- git init -> initilize git hidden folder for new projects
 - git add . -> stage changes
 - git commit -m "This is my first project" -> commit with message
 - git log -> view all previous commits
@@ -15,6 +15,7 @@
 - git log -2 -> last two commits alone 
 - git log --graph -> graph commits
 - git push --all -> pushes all branches to repository
+- git pull --rebase origin master
 
 ------
 
@@ -48,4 +49,12 @@
 1. Resolve
 2. Stage
 3. Commit 
+
+## Staging area
+- only a few files at the same time
+- checks errors
+
+## Git vs GitHub
+- Git: version control - local
+- GitHub: file storage - online
 

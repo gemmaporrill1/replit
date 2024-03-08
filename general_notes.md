@@ -65,7 +65,9 @@
 ## Emmet cheat sheet
 - https://docs.emmet.io/cheat-sheet/ 
 
-## Assignment - 07 March
+## Assignment - 08 March
 - squash and merge
 - rebase and merge 
-- how they are different from normal merge in Git
+    - how they are different from normal merge in Git
+- what are forks
+- git rebase -i -> master command
