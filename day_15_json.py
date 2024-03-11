@@ -96,5 +96,3 @@ with open("bank_dict.json", "w") as file:
 with open("bank_dict.json", "r") as file:
     data = json.load(file)
     print(data, type(data))  # prints a list
-
-
