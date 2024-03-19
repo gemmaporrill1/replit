@@ -9,7 +9,7 @@
 
 # how to get a iterator
 
-# nums_iter = nums.__iter__()  # converts to iterator fro  iterable
+# nums_iter = nums.__iter__()  # converts to iterator from iterable
 
 # number_iter = iter(nums)  # preferred way
 

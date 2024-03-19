@@ -323,6 +323,8 @@ gemma.display_balance()  # 1_050
 
 
 # magic methods __repr__, __str__, __add__
+
+
 # checking account - withdraw R1
 class CheckingAccount(Bank):
 
